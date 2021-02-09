@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>User Admin</h1>
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="text" class="form-control wbdv-username-fld" placeholder="Username"/>
+                    </th>
+                    <th>
+                        <input type="text" class="form-control wbdv-password-fld" placeholder="Password"/>
+                    </th>
+                    <th>
+                        <input type="text" class="form-control wbdv-fname-fld" placeholder="First Name"/>
+                    </th>
+                    <th>
+                        <input type="text" class="form-control wbdv-lname-fld" placeholder="Last Name"/>
+                    </th>
+                    <th>
+                        <select class="form-control wbdv-role-fld"/>
+                            <option>Faculty</option>
+                            <option>Student</option>
+                            <option>Admin</option>
+                        </select>
+                    </th>
+                    <th>
+                        <button class="wbdv-add-btn"><i class="fa fa-plus"></i></button>
+                        <button class="wbdv-create-btn"><i class="fa fa-plus"></i></button>
+                    </th>
+                    <th>
+                        <button class="wbdv-update-btn"><i class="fa fa-check"></i></button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

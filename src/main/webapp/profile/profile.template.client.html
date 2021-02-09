@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="profile.style.client.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+<div class="container">
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 col-xs-12">
+<h1>Profile</h1>
+<div class="alert alert-success" role="alert">Profile has been successfully saved!!</div>
+<div>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" class="form-control" value="Joe" readonly><br/>
+    <label for="phone">Contact Number</label>
+    <input type="text" id="phone" name="phone" class="form-control" placeholder="(551) 207-6334"><br/>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" class="form-control" placeholder="joe501@gmail.com"><br/>
+    <label for="role">Role</label>
+    <select id="role" name="role" class="form-control"disabled>
+        <option value="faculty">Faculty</option>
+        <option value="student" selected>Student</option>
+        <option value="admin">Admin</option>
+    </select><br/>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" class=form-control placeholder="mm/dd/yyyy" min="01/01/1990" max="31/12/2020"><br/>
+    <button type="button" class="btn btn-success">Update</button>
+    <a href="../index.html" class="btn btn-danger">Logout</a>
+</div>
+</div>
+            <div class="col-md-4"></div>
+</div>
+</div>
+</body>
+</html>

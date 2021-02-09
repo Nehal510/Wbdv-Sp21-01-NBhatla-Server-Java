@@ -1,0 +1,24 @@
+#addbutton1{
+    border-radius:50px;
+}
+#addbutton2{
+    border-radius:80px;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+}
+#coursename{
+    width:50%;
+}
+#nav1{
+    padding:25px 10px 25px 10px;
+}
+#table1{
+    background-color: aliceblue;
+}
+#table2{
+    background-color: aliceblue;
+}
+#table3{
+    background-color: aliceblue;
+}
