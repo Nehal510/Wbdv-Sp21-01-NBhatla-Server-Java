@@ -102,7 +102,11 @@ var $fnameFld
 var $lnameFld
 var $roleFld
 var $createBtn
+<<<<<<< HEAD
 /*var $addUserBtn*/
+=======
+var $addUserBtn
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
 var $theTableBody
 var $updateBtn
 var userService=new AdminUserServiceClient()
@@ -143,9 +147,15 @@ function deleteUser(event){
         })
 }
 
+<<<<<<< HEAD
 /*function addUser(){
     createUser({Username:'Lara90', Password:'tatbpart3', FirstName:'Lara', LastName:'Jean', Role:'Student'})
 }*/
+=======
+function addUser(){
+    createUser({Username:'Lara90', Password:'tatbpart3', FirstName:'Lara', LastName:'Jean', Role:'Student'})
+}
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
 
 function renderUsers(users) {
     $theTableBody.empty()
@@ -154,6 +164,7 @@ function renderUsers(users) {
         $theTableBody.prepend(
             `<tr>
                 <td>${user.Username}</td>
+<<<<<<< HEAD
                 <td class="hidepassword">${user.Password}</td>
                 <td>${user.FirstName}</td>
                 <td>${user.LastName}</td>
@@ -168,6 +179,19 @@ function renderUsers(users) {
     }
     jQuery(".wbdv-delete-btn").click(deleteUser)
     jQuery(".wbdv-select-btn").click(selectUser)
+=======
+                <td>${user.Password}</td>
+                <td>${user.FirstName}</td>
+                <td>${user.LastName}</td>
+                <td>${user.Role}</td>
+                <td><button class="wbdv-delete-btn" id="${i}">Delete</button></td>
+                <td><button class="wbdv-select-btn" id="${user._id}">Select</i></button></td>      
+        </tr>`
+        )
+    }
+    jQuery("button.wbdv-delete-btn").click(deleteUser)
+    jQuery("button.wbdv-select-btn").click(selectUser)
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
 }
 
 function updateUser(){
@@ -182,6 +206,7 @@ function updateUser(){
             users[Index]=selectedUser
             renderUsers(users)
         })
+<<<<<<< HEAD
         $usernameFld.val(""),
         $passwordFld.val(""),
         $fnameFld.val(""),
@@ -190,14 +215,24 @@ function updateUser(){
 }
 
 function main(){
+=======
+}
+
+function init(){
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
     $usernameFld = $(".wbdv-username-fld")
     $passwordFld = $(".wbdv-password-fld")
     $fnameFld = $(".wbdv-fname-fld")
     $lnameFld = $(".wbdv-lname-fld")
     $roleFld = $(".wbdv-role-fld")
     $createBtn = $(".wbdv-create-btn")
+<<<<<<< HEAD
     /*$addUserBtn = $(".wbdv-add-btn")
     $addUserBtn.click(addUser)*/
+=======
+    $addUserBtn = $(".wbdv-add-btn")
+    $addUserBtn.click(addUser)
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
     $updateBtn=$(".wbdv-update-btn")
     $theTableBody=$("tbody")
 
@@ -223,4 +258,8 @@ function main(){
             renderUsers(users)
         })
 }
+<<<<<<< HEAD
 jQuery(main)
+=======
+jQuery(init)
+>>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
