@@ -18,11 +18,7 @@ function AdminUserServiceClient() {
         })
     }
     function findAllUsers() {
-<<<<<<< HEAD
         return fetch(self.url,{method:'GET'})
-=======
-        return fetch(self.url)
->>>>>>> e67d7ed63ee6948b199c7b62c85be22c9e9ea23e
             .then(function (response) {
             return response.json()
         })
