@@ -1,1 +1,5 @@
 .hidepassword { -webkit-text-security: disc; }
+
+thead {background-color: gainsboro;}
+
+h1{text-align: center;}
