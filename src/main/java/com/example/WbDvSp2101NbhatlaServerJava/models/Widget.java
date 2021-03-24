@@ -123,8 +123,7 @@ public class Widget {
     public Widget() {
     }
 
-    public Widget(Long id, String topicId, String type, Integer size, String text, String name, Integer widgetOrder,
-                  String srcUrl, Integer Width, Integer Height, String cssClass, String style, String value) {
+    public Widget(Long id, String topicId, String type, Integer size, String text) {
         this.id = id;
         this.topicId = topicId;
         this.type = type;
