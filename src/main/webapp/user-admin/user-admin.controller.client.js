@@ -154,7 +154,7 @@ function renderUsers(users) {
         $theTableBody.prepend(
             `<tr>
                 <td>${user.Username}</td>
-                <td class="hidepassword">${user.Password}</td>
+                <td>&nbsp;</td>
                 <td>${user.FirstName}</td>
                 <td>${user.LastName}</td>
                 <td>${user.Role}</td>
